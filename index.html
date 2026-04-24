@@ -3,7 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <title>My Landing Page</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 40px;
+      background: #333;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: #f4f4f4;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Services */
+    .services {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .service-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .service-box {
+      background: #ddd;
+      padding: 20px;
+      margin: 10px;
+      width: 250px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+    }
+  </style>
 </head>
 <body>
 
@@ -12,7 +75,7 @@
     <h1>MyBrand</h1>
     <nav>
       <a href="#">Home</a>
-      <a href="#">Features</a>
+      <a href="#">Services</a>
       <a href="#">Contact</a>
     </nav>
   </header>
@@ -24,11 +87,14 @@
     <button>Get Started</button>
   </section>
 
-  <!-- Features Section -->
-  <section class="features">
-    <div class="box">Feature 1</div>
-    <div class="box">Feature 2</div>
-    <div class="box">Feature 3</div>
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+      <div class="service-box">Web Design</div>
+      <div class="service-box">Frontend Development</div>
+      <div class="service-box">Responsive Design</div>
+    </div>
   </section>
 
   <!-- Footer -->
